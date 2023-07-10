@@ -10,6 +10,7 @@ import {
 
 import FeatureTitle from "@/components/features/title";
 import { MusicVisual } from "@/components/features/visual";
+import Showcase from "@/components/showcase/showcase";
 
 const features = [
   { title: "Use your calendar as a todo, list", id: "todo-list", card: Todo },
@@ -32,7 +33,7 @@ export default function Page() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <Hero />
-      <MusicVisual />
+      {/*     <MusicVisual /> */}
       <div className="flex w-full gap-20">
         <div className="w-full py-[50vh]">
           <ul>
@@ -51,7 +52,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="h-screen">More room to scroll</div>
+      <Showcase />
+      <div className="bg-fuchsia-500 h-[200vh]"></div>
     </div>
   );
 }
